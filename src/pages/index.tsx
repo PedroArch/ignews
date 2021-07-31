@@ -38,16 +38,26 @@ export default function Home({product}: HomeProps) {
     </>
   )
 }
+
+// Client Server Render CSR
+// Server Side Render SSR
+// Static Site Generation SSG
+
 // faz o fetch na camada do Next/Node e não no browser
+
 // GetStaticProps faz o fetch uma vez e depois do revalidade faz novamente diminuindo
 // as chamadas app
+
 // GetServerSideProps faz chamada a API toda vez que a página é carregada
+
 // Aqui é usado o getstatic pq a página é comum para todas (ex: Não usa info do usuário)
+// Salva o HTML por um periodo de tempo e atualiza no periodo do revalidate
 export const getStaticProps: GetStaticProps = async () => {
-  // o segundo parametro tras as informações do produto além do preço
+
+  // o segundo parametro trás as informações do produto além do preço
   // nessa aplicação não precisa ser passado, mas deixo como forma de help
   const price = await stripe.prices.retrieve('price_1J34IfJCsai3xu0gkUxJJODa', {
-    expand: ['product']
+    expand: ['product'] // para trazer mais infos do que só o price
     })
 
   const product = {
@@ -64,6 +74,6 @@ export const getStaticProps: GetStaticProps = async () => {
     props: {
       product
     },
-    revalidate: 60 * 60 * 24, // 24 hours
+    revalidate: 60 * 60 * 24, // 24 hours reatualiza o HTML da página
   }
 }
