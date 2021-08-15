@@ -17,12 +17,6 @@ O projeto Ignews tem como objetivo criar uma aplicação onde o usuário pode le
 
 Essa aplicação foi feita durante o curso Ignite ReactJS da Rocketseat, as aulas foram ministradas pelo desenvolvedor Diego Fernandes [@dieegosf](https://twitter.com/dieegosf)
 
-O projeto Proffy foi desenvolvido com o objetivo de conectar professores e alunos em uma plataforma digital. Possui versão web, onde os professores podem se cadastrar para dar aulas, adicionando informações sobre a disciplina, o custo e horário e, versão mobile, em que os alunos podem filtrar as aulas cadastradas para iniciar os estudos.
-
-Essa aplicação foi realizada durante a Next Level Week #2, projeto da Rocketseat, com tutoria de Diego Fernandes.
-
-  
-
 ---
 
 ## 🛠️ Tecnologias Utilizadas
