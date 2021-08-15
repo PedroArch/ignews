@@ -1,34 +1,83 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<h1 align="center">
+    <img  width= '300'src=".\.github\ignewslogo.png">
+</h1>
 
-## Getting Started
+<h3 align="center"> Ignite React JS </h3>
 
-First, run the development server:
+
+
+<h1 align="center">
+    <img src=".\.github\ignews-thumbnail.png">
+</h1>
+
+
+## 🚀 Sobre
+
+O projeto Ignews tem como objetivo criar uma aplicação onde o usuário pode ler noticias relacionadas ao framework React por meio de uma assinatura de cartão de crédito.
+
+Essa aplicação foi feita durante o curso Ignite ReactJS da Rocketseat, as aulas foram ministradas pelo desenvolvedor Diego Fernandes [@dieegosf](https://twitter.com/dieegosf)
+
+O projeto Proffy foi desenvolvido com o objetivo de conectar professores e alunos em uma plataforma digital. Possui versão web, onde os professores podem se cadastrar para dar aulas, adicionando informações sobre a disciplina, o custo e horário e, versão mobile, em que os alunos podem filtrar as aulas cadastradas para iniciar os estudos.
+
+Essa aplicação foi realizada durante a Next Level Week #2, projeto da Rocketseat, com tutoria de Diego Fernandes.
+
+  
+
+---
+
+## 🛠️ Tecnologias Utilizadas
+
+- Typescript
+- ReactJs
+- Stripe
+- FaunaDB
+- prismic
+- Next
+- next-auth
+
+
+**⚠️ Atenção** Requisitos que devem estar instalados:
+
+- Node.js
+- Git 
+- Gerenciador de pacotes (NPM ou Yarn).
+
+---
+## 📦 Como instalar e iniciar o projeto
+
 
 ```bash
-npm run dev2
-# or
-yarn dev
+# Clonar o repositório
+$ git clone https://github.com/pedroarch/ignews.git 
+
+# Entrar na pasta do projeto
+$ cd ignews
+
+# Instalar as dependências
+$ yarn
+
+# Iniciar o servidor
+$ yarn dev
+
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+### 📋 Licença
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para mais detalhes.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
-## Learn More
+### 😎 Redes Sociais
 
-To learn more about Next.js, take a look at the following resources:
+<div>
+  <a href="https://www.linkedin.com/in/pedro-franco-carvalho/" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a> 
+  <a href="https://instagram.com/pedroarch" target="_blank"><img src="https://img.shields.io/badge/-Instagram-%23E4405F?style=for-the-badge&logo=instagram&logoColor=white"         target="_blank"></a>
+  <a href="https://www.twitter.com/pedroarch" target="_blank"><img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white"         target="_blank"></a>
+    <a href="https://api.whatsapp.com/send/?phone=5551991218191&text=Ola%2C+Pedro&app_absent=0" target="_blank"><img src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white"         target="_blank"></a>
+  <a href = "mailto:pedrofrancocarvalho@gmail.com"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" target="_blank"></a>
+</div>
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+---
+Desenvolvido com carinho por Pedro Carvalho
