@@ -22,7 +22,6 @@ export const config = {
   }
 }
 
-
 // Em caso de mais de um lugar para adquirir incluir o created mas verificar
 // No BD se já existe a subscription
 const relevantEvents = new Set([

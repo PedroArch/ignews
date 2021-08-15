@@ -15,6 +15,7 @@ type User = {
 
 export default async (req: NextApiRequest, res: NextApiResponse) => {
   if (req.method === 'POST') {
+
     const session = await getSession({ req })
 
     const user = await fauna.query<User>(
@@ -27,6 +28,7 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
     )
 
     let customerId = user.data.stripe_customer_id;
+
 
     if (!customerId) {
       const stripeCustomer = await stripe.customers.create({
@@ -48,7 +50,7 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
       customerId = stripeCustomer.id
     }
 
-   
+    
 
     const stripeCheckoutSession = await stripe.checkout.sessions.create({
       customer: customerId,
@@ -65,6 +67,7 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
     })
 
     return res.status(200).json({sessionId: stripeCheckoutSession.id})
+   
   } else {
     res.setHeader('Allow', 'POST')
     res.status(405).end('Method not allowed')
